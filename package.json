@@ -1,0 +1,17 @@
+{
+  "name": "crystalpay",
+  "version": "1.0.0",
+  "description": "Неофициальная библиотека для работы с платежной системой CrystalPAY (crystalpay.ru)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mrenigman",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "http-build-query": "^0.7.0"
+  }
+}

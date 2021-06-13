@@ -50,11 +50,17 @@ class CrystalPAY {
   }
 
   createReceipt(amount, m = null, redirect = null, callback = null) {
-    return this.request("receipt-create", {
-      amount,
-      m,
-      redirect,
-      callback,
+    return new Promise((resolve, reject) => {
+      this.request("receipt-create", {
+        amount,
+        redirect,
+        callback,
+      })
+        .then((response) => {
+          if (m) response.url += `&m=${m}`;
+          return resolve(response);
+        })
+        .catch(reject);
     });
   }
 

@@ -2,7 +2,6 @@
 
 **[Официальная документация по API](https://crystalpay.ru/docs/API-docs.html "Официальная документация по API")**
 
-### Начало
     const { CrystalPAY } = require(".");
     
     const LOGIN = "mrenigman", // Логин кассы
